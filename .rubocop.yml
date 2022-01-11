@@ -4,3 +4,7 @@ Metrics/MethodLength:
   Max: 7
   Exclude:
     - 'bin/bundle'
+    - 'db/migrate/*'
+
+Style/Documentation:
+  Enabled: false
