@@ -229,7 +229,7 @@ DEPENDENCIES
   rails (~> 7.0.1)
   rspec-rails
   rubocop
-  shoulda-matchers
+  shoulda-matchers (~> 5.0)
   tzinfo-data
 
 RUBY VERSION
