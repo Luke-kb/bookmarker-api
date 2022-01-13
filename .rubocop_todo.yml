@@ -21,14 +21,6 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Max: 9
 
-# Offense count: 1
-# Configuration parameters: AllowedConstants.
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'config/application.rb'
-
 # Offense count: 22
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
@@ -44,9 +36,6 @@ Style/GlobalStdStream:
 
 # Offense count: 1
 # Cop supports --auto-correct.
-Style/IfUnlessModifier:
-  Exclude:
-    - 'bin/bundle'
 
 # Offense count: 2
 # Cop supports --auto-correct.
