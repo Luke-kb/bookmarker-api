@@ -8,10 +8,10 @@ RSpec.describe 'Api::V1::Users', type: :request do
     it 'creates a new user' do
       post api_v1_users_path, params: { user: user_params }
 
-      expected_body = { 'email' => 'user@het.com.net' }
+      expected_body = { 'email' => 'user@hey.com.net' }
 
       expect(response).to have_http_status(:created)
-      expect(JSON.parse(response_body)).to include(expected_body)
+      expect(JSON.parse(response.body)).to include(expected_body)
     end
 
     it 'returns unprocessable entity with errors' do
