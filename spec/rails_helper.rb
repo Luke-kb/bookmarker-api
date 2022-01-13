@@ -34,6 +34,9 @@ RSpec.configure do |config|
   # Remove the need to call "FactoryBot" before using factory bot methods
   config.include FactoryBot::Syntax::Methods
 
+  # execute devise when running tests tests
+  config.include Devise::Test::ControllerHelpers, type: :controller
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
