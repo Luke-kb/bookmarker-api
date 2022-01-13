@@ -2,9 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Api::V1::Users', type: :request do
   describe 'POST /api/v1/users' do
-    let(:user_params) do
-      { email: 'user@hey.com.net', password: 'fakepassword' }
-    end
+    let(:user_params) { {email: 'user@hey.com.net', password: 'fakepassword'} }
+
     it 'creates a new user' do
       post api_v1_users_path, params: { user: user_params }
 
